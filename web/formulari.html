@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atlético de Madrid</title>
+    </head>
+    <body>
+        <header>
+            <img src="../img/iberdrola.png" alt="Liga iberdrola" width="720" height="250">
+            <nav>
+                <a href="../index.html">Inici</a>
+                <a href="./classif.html">Classificació</a>
+                <a href="./resultats.html">Resultats</a>
+                </nav>
+        </header>
+        <main>
+            <form action="./validaenquesta.php" method="POST">
+                <p>
+                    <label for="email">Correu Electrónic</label>
+                    <input type="email" id="idEmail" name="Correu Electrónic" placeholder="Introdueix el teu correu electrónic">
+                </p>
+                <p>
+                    <label for="text">Nom complet</label>
+                    <input type="text" id="idNom" name="Nom Complet" placeholder="Nom complet">
+                </p>
+                <p>
+                    <label for="">Puntuació Web Info</label>
+                    <input type="number" id="idNum" name="Puntuació" placeholder="Puntuació (1-5)" min="1" max="5" value="1">
+                </p>
+                <h2>Valoració Global</h2>
+                <p>
+                    <input type="radio" id="inExcelent" value="Excel·lent" name="valoracioglobal" checked>
+                    <label for="inExcelent">Excel·lent</label>
+                </p>
+                <p>
+                    <input type="radio" id="inNotable" value="Notable" name="valoracioglobal">
+                    <label for="inNotable">Notable</label>
+                </p>
+                <p>
+                    <input type="radio" id="inBona" value="Bona" name="valoracioglobal">
+                    <label for="inBona">Bona</label>
+                </p>
+                <p>
+                    <input type="radio" id="inRegular" value="Regular" name="valoracioglobal">
+                    <label for="inRegular">Regular</label>
+                </p>
+                <p>
+                    <input type="radio" id="inDolenta" value="Dolenta" name="valoracioglobal">
+                    <label for="inDolenta">Dolenta</label>
+                </p>
+                <p>
+                    <label for="color">Color para el Tema</label>
+                    <input id="color1" name="color1" type="color" value="#FF0000">
+                </p>
+                <h2>Observacions</h2>
+                <p>
+                    <textarea placeholder="Introdueix la teva observació"></textarea>
+                </p>
+                <input value="Limpia" type="reset">
+                <input value="Envia" type="submit">
+            </form>
+        </main>
+    </body>
+</html>
